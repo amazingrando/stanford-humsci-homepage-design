@@ -8,8 +8,67 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-stanford-red: #8b191b;
+  --color-semantic-bg-charcoal: hsla(220, 4%, 31%, 1);
+  --color-beige: hsla(42, 19%, 89%, 1);
+  --color-cardinal-red: hsla(0, 74%, 32%, 1);
+  --color-cardinal-red-dark: hsla(0, 100%, 25%, 1);
+  --color-cardinal-red-light: hsla(352, 52%, 47%, 1);
+  --color-neutrals-cool-gray: hsla(214, 4%, 34%, 1);
+  --color-neutrals-black: hsla(48, 6%, 17%, 1);
+  --color-neutrals-white: hsla(0, 0%, 100%, 1);
+  --color-black-90: hsla(48, 4%, 25%, 1);
+  --color-black-80: hsla(45, 2%, 34%, 1);
+  --color-black-70: hsla(45, 2%, 42%, 1);
+  --color-black-60: hsla(60, 1%, 46%, 1);
+  --color-black-50: hsla(40, 1%, 59%, 1);
+  --color-black-40: hsla(60, 1%, 67%, 1);
+  --color-black-30: hsla(60, 1%, 75%, 1);
+  --color-black-20: hsla(60, 1%, 83%, 1);
+  --color-black-10: hsla(0, 0%, 92%, 1);
+  --color-palo-alto: hsla(172, 61%, 23%, 1);
+  --color-palo-alto-light: hsla(178, 43%, 31%, 1);
+  --color-palo-alto-dark: hsla(178, 97%, 13%, 1);
+  --color-olive: hsla(67, 42%, 42%, 1);
+  --color-olive-light: hsla(69, 32%, 55%, 1);
+  --color-olive-dark: hsla(70, 39%, 38%, 1);
+  --color-palo-verde: hsla(172, 59%, 38%, 1);
+  --color-palo-verde-light: hsla(173, 37%, 53%, 1);
+  --color-palo-verde-dark: hsla(179, 98%, 25%, 1);
+  --color-lagunita: hsla(189, 100%, 29%, 1);
+  --color-lagunita-light: hsla(189, 100%, 35%, 1);
+  --color-lagunita-dark: hsla(190, 100%, 25%, 1);
+  --color-sky: hsla(195, 47%, 48%, 1);
+  --color-sky-light: hsla(200, 54%, 61%, 1);
+  --color-sky-dark: hsla(198, 99%, 29%, 1);
+  --color-bay: hsla(148, 22%, 54%, 1);
+  --color-bay-light: hsla(158, 24%, 63%, 1);
+  --color-bay-dark: hsla(159, 30%, 36%, 1);
+  --color-poppy: hsla(34, 100%, 46%, 1);
+  --color-poppy-light: hsla(31, 94%, 63%, 1);
+  --color-poppy-dark: hsla(27, 87%, 44%, 1);
+  --color-spirited: hsla(8, 73%, 55%, 1);
+  --color-spirited-light: hsla(12, 87%, 66%, 1);
+  --color-spirited-dark: hsla(8, 60%, 49%, 1);
+  --color-illuminating: hsla(48, 99%, 68%, 1);
+  --color-illuminating-light: hsla(49, 100%, 75%, 1);
+  --color-illuminating-dark: hsla(45, 99%, 55%, 1);
+  --color-archway: hsla(27, 22%, 30%, 1);
+  --color-archway-light: hsla(26, 17%, 39%, 1);
+  --color-archway-dark: hsla(0, 13%, 16%, 1);
+  --color-brick: hsla(342, 57%, 25%, 1);
+  --color-brick-light: hsla(340, 48%, 34%, 1);
+  --color-brick-dark: hsla(340, 78%, 15%, 1);
+  --color-plum: hsla(306, 100%, 19%, 1);
+  --color-plum-light: hsla(297, 25%, 37%, 1);
+  --color-plum-dark: hsla(299, 61%, 13%, 1);
+  --color-stone: hsla(7, 4%, 48%, 1);
+  --color-stone-light: hsla(0, 3%, 83%, 1);
+  --color-stone-dark: hsla(5, 8%, 31%, 1);
+  --color-fog: hsla(48, 17%, 83%, 1);
+  --color-fog-light: hsla(0, 0%, 96%, 1);
+  --color-fog-dark: hsla(37, 8%, 69%, 1);
+  --font-sans: "Source Sans 3", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,8 +78,3 @@
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
