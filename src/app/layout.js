@@ -1,5 +1,6 @@
 import { Source_Sans_3 } from "next/font/google";
 import "./globals.css";
+import Header from "@/app/components/header.js";
 
 const sourceSansPro = Source_Sans_3({
   weight: ["300", "400", "500", "600", "700", "900"],
@@ -16,8 +17,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${sourceSansPro.variable} font-sans antialiased`}
+        className={`${sourceSansPro.variable} font-sans antialiased relative`}
       >
+        <Header />
         {children}
       </body>
     </html>

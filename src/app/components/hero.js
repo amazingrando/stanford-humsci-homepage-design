@@ -80,9 +80,7 @@ function ParallaxText({ baseVelocity = 100, className }) {
               backgroundSize: 'cover',
               backgroundPosition: 'center'
             }}
-          >
-            {imageIndex}
-          </div>
+          />
         ))
       ))}
     </motion.div>
@@ -93,7 +91,7 @@ const Hero = () => {
   return (
     <div className="min-h-[600vh]">
 
-      <div className="h-screen bg-semantic-bg-charcoal text-color-cardinal-red z-10 overflow-hidden">
+      <div className="h-screen bg-semantic-bg-charcoal text-color-cardinal-red z-10 overflow-hidden relative">
         
         <div className="flex flex-col justify-start">
           <ParallaxText baseVelocity={-2} className="text-4xl font-bold text-white"/>
@@ -109,7 +107,6 @@ const Hero = () => {
             <h1 className="text-4xl font-bold">Research and learning are the foundations of discovery.</h1>
           </div>
         </div>
-
 
         <div className="absolute inset-0 bg-semantic-bg-charcoal mix-blend-multiply saturate-50 z-30" />
       </div>
