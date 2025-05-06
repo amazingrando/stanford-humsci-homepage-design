@@ -11,19 +11,9 @@ import {
   useAnimationFrame
 } from "framer-motion";
 import { wrap } from "@motionone/utils";
+import bg from "@/app/data/heroBackgrounds.json";
 
-const HERO_IMAGES = [
-  '/images/heroBg/AfricanandAfricanAmericanStudies-web.jpg',
-  '/images/heroBg/AmericanStudies-web.jpg',
-  '/images/heroBg/Anthropology-web_0.jpg',
-  '/images/heroBg/Appliedphysics-web.jpg',
-  '/images/heroBg/Archaeology-web.jpg',
-  '/images/heroBg/ArtArtHistory-web_1.jpg',
-  '/images/heroBg/AsianAmericanStudies-web.jpg',
-  '/images/heroBg/Biology-web.jpg',
-];
-
-function ParallaxText({ baseVelocity = 100, className }) {
+function ParallaxText({ baseVelocity = 100, className, bgImages }) {
   const baseX = useMotionValue(0);
   const { scrollY } = useScroll();
   const scrollVelocity = useVelocity(scrollY);
@@ -71,7 +61,7 @@ function ParallaxText({ baseVelocity = 100, className }) {
   return (
     <motion.div className={`flex flex-row justify-start ${className}`} style={{ x }} >
       {[1,2,3,4].map((_, index) => (
-        HERO_IMAGES.map((image, imageIndex) => (
+        bgImages.map((image, imageIndex) => (
           <div 
             key={`${index}-${imageIndex}`}
             className="!w-[200px] h-[200px] block flex-none"
@@ -91,24 +81,28 @@ const Hero = () => {
   return (
     <div className="min-h-[600vh]">
 
-      <div className="h-screen bg-semantic-bg-charcoal text-color-cardinal-red z-10 overflow-hidden relative">
+      <div className="h-screen max-h-[1200px] bg-semantic-bg-charcoal text-color-cardinal-red z-10 overflow-hidden relative">
         
         <div className="flex flex-col justify-start">
-          <ParallaxText baseVelocity={-2} className="text-4xl font-bold text-white"/>
-          <ParallaxText baseVelocity={2} className="text-4xl font-bold text-white"/>
-          <ParallaxText baseVelocity={-2} className="text-4xl font-bold text-white"/>
-          <ParallaxText baseVelocity={2} className="text-4xl font-bold text-white"/>
-          <ParallaxText baseVelocity={-2} className="text-4xl font-bold text-white"/>
-          <ParallaxText baseVelocity={2} className="text-4xl font-bold text-white"/>
+          <ParallaxText baseVelocity={-2} className="text-4xl font-bold text-white" bgImages={bg.heroBackgrounds.group1}/>
+          <ParallaxText baseVelocity={2} className="text-4xl font-bold text-white" bgImages={bg.heroBackgrounds.group2}/>
+          <ParallaxText baseVelocity={-2} className="text-4xl font-bold text-white" bgImages={bg.heroBackgrounds.group3}/>
+          <ParallaxText baseVelocity={2} className="text-4xl font-bold text-white" bgImages={bg.heroBackgrounds.group4}/>
+          <ParallaxText baseVelocity={-2} className="text-4xl font-bold text-white" bgImages={bg.heroBackgrounds.group5}/>
+          <ParallaxText baseVelocity={2} className="text-4xl font-bold text-white" bgImages={bg.heroBackgrounds.group6}/>
         </div>
 
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="bg-cardinal-red text-white p-16 relative z-40">
-            <h1 className="text-4xl font-bold">Research and learning are the foundations of discovery.</h1>
+          <div className="bg-gradient-to-b from-cardinal-red to-stanford-red-light rounded shadow-2xl/40 text-white text-center p-16 relative z-40">
+            <h1 className="space-y-2">
+              <span className="block text-7xl font-bold tracking-tight">Research & Learning </span> 
+              <span className="block text-6xl text-white/80 tracking-tight">are the foundations of discovery.</span>
+            </h1>
+            <a href="#" className="text-2xl inline-block mt-8 px-8 py-4 font-bold border border-humsci-gold">Explore What Moves You</a>
           </div>
         </div>
 
-        <div className="absolute inset-0 bg-semantic-bg-charcoal mix-blend-multiply saturate-50 z-30" />
+        <div className="absolute inset-0 bg-gradient-to-b from-semantic-bg-charcoal via-semantic-bg-charcoal to-black mix-blend-multiply z-30" />
       </div>
     </div>
   );

@@ -1,0 +1,82 @@
+{
+  "heroBackgrounds": {
+    "group1": [
+      "/images/heroBg/EthicsinSociety-web.jpg",
+      "/images/heroBg/ModernThoughtLiterature-web_0.jpg",
+      "/images/heroBg/Sociology-web_0.jpg",
+      "/images/heroBg/Urban-Studies-web_0.jpg",
+      "/images/heroBg/ScienceTechnologyandSociety-web.jpg",
+      "/images/heroBg/Theater-and-Performance-Studies-web_1.jpg",
+      "/images/heroBg/Linguistics.png",
+      "/images/heroBg/NativeAmericanStudies-web.jpg"
+    ],
+    "group2": [
+      "/images/heroBg/PoliticalScience-web_0.jpg",
+      "/images/heroBg/JewishStudies-web.jpg",
+      "/images/heroBg/philosophy-web2.jpg",
+      "/images/heroBg/FrenchandItalian-web_0.jpg",
+      "/images/heroBg/ComparativeStudiesinRaceandEthnicty-web.jpg",
+      "/images/heroBg/InternationalSecurityStudies-web.jpg",
+      "/images/heroBg/ComparativeLiterature.jpeg-web.jpg",
+      "/images/heroBg/Communications-web_0.jpg"
+    ],
+    "group3": [
+      "/images/heroBg/Classics-web_0.jpg",
+      "/images/heroBg/HumanBiology-web_0.jpg",
+      "/images/heroBg/IberianandLatinAmerican-web_0.jpg",
+      "/images/heroBg/LatinAmericanStudies.jpg",
+      "/images/heroBg/History-web.jpg",
+      "/images/heroBg/Slavicweb.jpg",
+      "/images/heroBg/MathematicsandComputationalScience-web.jpg",
+      "/images/heroBg/stanfordglobalstudies.jpg"
+    ],
+    "group4": [
+      "/images/heroBg/symbolicsystems-web.jpg",
+      "/images/heroBg/Psychology-web_0.jpg",
+      "/images/heroBg/RussianEasternEuropeanEurasianStudies-web.jpg",
+      "/images/heroBg/Statistics-web.jpg",
+      "/images/heroBg/Music-web_0.jpg",
+      "/images/heroBg/ReligiousStudies-web.jpg",
+      "/images/heroBg/iStock-637987772_medical-humanities.jpg",
+      "/images/heroBg/mathweb.jpg"
+    ],
+    "group5": [
+      "/images/heroBg/Economics-web_0.jpg",
+      "/images/heroBg/PublicPolicy-web_0.jpg",
+      "/images/heroBg/iStock-1142610359-01.jpg",
+      "/images/heroBg/Physics-web_0.jpg",
+      "/images/heroBg/InternationalRelationsWEB.jpg",
+      "/images/heroBg/ChicanxLatinxStudies-web.jpg",
+      "/images/heroBg/English-web.jpg",
+      "/images/heroBg/FeministGenderSexuality-Studies-web.jpg"
+    ],
+    "group6": [
+      "/images/heroBg/Biophysics-web.jpg",
+      "/images/heroBg/Chemistry_web.jpg",
+      "/images/heroBg/EastAsianStudies-web.jpg",
+      "/images/heroBg/AfricanandAfricanAmericanStudies-web.jpg",
+      "/images/heroBg/ArtArtHistory-web_1.jpg",
+      "/images/heroBg/HonorsintheArts-web.jpg",
+      "/images/heroBg/DLCL.jpg",
+      "/images/heroBg/Biology-web.jpg"
+    ],
+    "group7": [
+      "/images/heroBg/Democracy, Development, Rule of Law-web.jpg",
+      "/images/heroBg/HumanRights-web.jpg",
+      "/images/heroBg/Archaeology-web.jpg",
+      "/images/heroBg/CQ-p18-4.jpg",
+      "/images/heroBg/InternationalPolicyStudies-web.jpg",
+      "/images/heroBg/AsianAmericanStudies-web.jpg",
+      "/images/heroBg/Appliedphysics-web.jpg",
+      "/images/heroBg/GermanStudies-web_0.jpg"
+    ],
+    "group8": [
+      "/images/heroBg/Anthropology-web_0.jpg",
+      "/images/heroBg/EALC_web.jpg",
+      "/images/heroBg/Phil1.041_0.jpg.webp",
+      "/images/heroBg/AmericanStudies-web.jpg",
+      "/images/heroBg/NEW_DAAAS_bird 032124.jpg",
+      "/images/heroBg/Brochure_link_gif_sidebar Oct 2023.gif"
+    ]
+  }
+} 
