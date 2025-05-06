@@ -12,6 +12,8 @@ import {
 } from "framer-motion";
 import { wrap } from "@motionone/utils";
 import bg from "@/app/data/heroBackgrounds.json";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCompass } from '@fortawesome/pro-regular-svg-icons'
 
 function ParallaxText({ baseVelocity = 100, className, bgImages }) {
   const baseX = useMotionValue(0);
@@ -98,7 +100,10 @@ const Hero = () => {
               <span className="block text-7xl font-bold tracking-tight">Research & Learning </span> 
               <span className="block text-6xl text-white/80 tracking-tight">are the foundations of discovery.</span>
             </h1>
-            <a href="#" className="text-2xl inline-block mt-8 px-8 py-4 font-bold border border-humsci-gold">Explore What Moves You</a>
+            <a href="#" className="text-2xl inline-block mt-8 px-8 py-4 font-bold border top-0 border-humsci-gold hover:shadow-xl/30 relative  hover:scale-105 hover:bg-cardinal-red-dark transition-all duration-300">
+              <FontAwesomeIcon icon={faCompass} className="mr-2 text-humsci-gold" />
+              Explore What Moves You
+            </a>
           </div>
         </div>
 
