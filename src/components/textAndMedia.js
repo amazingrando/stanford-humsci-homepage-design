@@ -7,10 +7,11 @@ export default function TextAndMedia() {
       <div className="flex-1 max-w-wrapper grid grid-cols-8 gap-16">
 
         <div className="col-span-4 self-center py-20">
-          <h2 className="text-5xl tracking-tight font-bold mb-6">Foundational Research. Transformational Impact.
+          <p className="text-humsci-gold text-lg tracking-wide uppercase font-bold mb-6 text-balance">Where Discovery Begins</p>
+          <h2 className="text-5xl tracking-tight font-bold mb-6 text-balance">Foundational Research. Transformational Impact.
           </h2>
-          <h3 className="text-2xl">Behind every breakthrough is the unseen work that drives discovery, innovation, and progress for all humankind.</h3>
-          <a href="#" className="text-lg inline-block mt-12 px-4 py-2 font-bold border border-humsci-gold hover:bg-white hover:text-stanford-red transition-all duration-300">See the Research Behind the Breakthroughs</a>
+          <h3 className="text-2xl text-balance">Behind every breakthrough is the unseen work that drives discovery, innovation, and progress for all humankind.</h3>
+          <a href="#" className="text-lg inline-block mt-12 px-4 py-2 font-bold border border-humsci-gold hover:bg-white hover:text-stanford-red transition-all duration-300">The Research behind the Breakthroughs</a>
         </div>
 
         <div className="col-span-4 absolute inset-0 left-1/2">

@@ -1,4 +1,4 @@
-import Hero from "@/components/hero";
+import Hero from "@/components/heroAnimated";
 
 export default {
   title: 'Layout/Hero',

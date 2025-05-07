@@ -79,7 +79,7 @@ function ParallaxText({ baseVelocity = 100, className, bgImages }) {
   );
 }
 
-const Hero = () => {
+const HeroAnimated = () => {
   return (
 
     <div className="h-screen max-h-[1200px] bg-semantic-bg-charcoal text-color-cardinal-red z-10 overflow-hidden relative">
@@ -111,4 +111,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default HeroAnimated;
