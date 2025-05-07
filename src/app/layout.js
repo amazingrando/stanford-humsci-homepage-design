@@ -1,6 +1,6 @@
 import { Source_Sans_3 } from "next/font/google";
 import "./globals.css";
-import Header from "@/app/components/header.js";
+import Header from "@/components/header.js";
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false

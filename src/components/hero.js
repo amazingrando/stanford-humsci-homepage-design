@@ -11,7 +11,7 @@ import {
   useAnimationFrame
 } from "framer-motion";
 import { wrap } from "@motionone/utils";
-import bg from "@/app/data/heroBackgrounds.json";
+import bg from "@/data/heroBackgrounds.json";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCompass } from '@fortawesome/pro-thin-svg-icons'
 

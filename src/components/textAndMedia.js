@@ -1,9 +1,9 @@
-import mediaImage from "@/app/assets/images/foundational-research_iceberg_final-copy-01-01_1.webp"
+import mediaImage from "@/assets/images/foundational-research_iceberg_final-copy-01-01_1.webp"
 import Image from "next/image"
 
 export default function TextAndMedia() {
   return (
-    <div className="relative bg-stanford-red neutrals-black text-white min-h-[60svh] flex flex-col">
+    <div className="relative bg-humsci-blue neutrals-black text-white min-h-[60svh] flex flex-col">
       <div className="flex-1 max-w-wrapper grid grid-cols-8 gap-16">
 
         <div className="col-span-4 self-center py-20">

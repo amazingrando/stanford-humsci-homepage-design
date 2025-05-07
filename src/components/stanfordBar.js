@@ -1,4 +1,4 @@
-import StanfordUniversityLogo from "@/app/components/logos/StanfordUniversityLogo.js";
+import StanfordUniversityLogo from "@/components/logos/StanfordUniversityLogo.js";
 
 export default function StanfordBar({className = ""}) {
   return (

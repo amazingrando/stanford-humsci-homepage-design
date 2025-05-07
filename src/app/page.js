@@ -1,8 +1,8 @@
-import Hero from "@/app/components/hero";
-import ImageSide from "@/app/components/imageSide";
-import mediaImage from "@/app/assets/images/foundational-research_iceberg_final-copy-01-01_1.webp"
-import TextAndMedia from "@/app/components/textAndMedia";
-import News from "@/app/components/news";
+import Hero from "@/components/hero";
+import ImageSide from "@/components/imageSide";
+import mediaImage from "@/assets/images/foundational-research_iceberg_final-copy-01-01_1.webp"
+import TextAndMedia from "@/components/textAndMedia";
+import News from "@/components/news";
 
 export default function Home() {
   return (

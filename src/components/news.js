@@ -1,7 +1,7 @@
 'use client'
 
 import Image from "next/image";
-import bgImage from "@/app/assets/images/A5091FDF-29FD-49AF-89A6-9C24367E3C1C.png"
+import bgImage from "@/assets/images/A5091FDF-29FD-49AF-89A6-9C24367E3C1C.png"
 import { motion,
   useInView,
   useMotionValueEvent,
@@ -247,7 +247,7 @@ export default function News() {
   const fourthGroup = newsData.slice(itemsPerGroup * 3).slice(0, 6);
 
   return (
-    <div className="bg-semantic-bg-charcoal py-20 space-y-16 relative">
+    <div className="bg-black-70 py-20 space-y-16 relative">
       
       <div className="max-w-wrapper text-center z-10 relative">
         <h2 className="text-5xl tracking-tight font-bold mb-6 text-white">Advancing Knowledge, Shaping the Future</h2>
@@ -275,11 +275,6 @@ export default function News() {
             <Card title={item.title} image={item.image} date={item.date} description={item.description} key={item.title} />
           ))}
         </div> */}
-      </div>
-
-      <div className="absolute top-0 left-0 right-0 h-full bg-gradient-to-b from-humsci-gold-dark via-humsci-gold-dark to-humsci-gold"></div>
-      <div className="absolute top-0 left-0 right-0 z-0">
-        {/* <Image src={bgImage} alt="News" width={1920} height={1080} className="w-full object-cover" /> */}
       </div>
     </div>
   )

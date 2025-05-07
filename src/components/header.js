@@ -1,4 +1,4 @@
-import StanfordBar from "@/app/components/stanfordBar.js";
+import StanfordBar from "@/components/stanfordBar.js";
 
 export default function Header() {
   return (
