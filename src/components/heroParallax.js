@@ -16,7 +16,7 @@ export default function HeroParallax() {
     offset: ["start start", "end start"]
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], ["0%", "80%"]);
+  const y = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
   return (
     <div className="h-screen w-full relative overflow-hidden flex flex-col items-center justify-center">

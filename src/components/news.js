@@ -216,9 +216,10 @@ const newsData = [
   }
 ]
 
-const Card = ({ title, image, date, description }) => {
+const Card = ({ title, image, date, description, useDefaultImage = false }) => {
   const targetRef = useRef(null);
   const isInView = useInView(targetRef, { once: true });
+  const defaultImage = "https://placehold.co/600x400"
   
   return (
     <motion.div 
@@ -228,7 +229,7 @@ const Card = ({ title, image, date, description }) => {
       transition={{ duration: 0.5 }}
       className="bg-white border border-humsci-gold-dark text-humsci-gold-dark"
     >
-      <Image src={image} alt={title} width={600} height={400} className="block" />
+      <Image src={useDefaultImage ? defaultImage : image} alt={title} width={600} height={400} className="block" />
       <div className="p-6">
         <p className="text-sm mb-2 font-bold text-semantic-bg-charcoal">{date}</p>
         <h2 className="text-3xl tracking-tight font-medium text-cardinal-red-dark mb-4">{title}</h2>
