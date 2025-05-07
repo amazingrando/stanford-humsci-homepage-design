@@ -239,7 +239,7 @@ const Card = ({ title, image, date, description, useDefaultImage = false }) => {
   )
 }
 
-export default function News() {
+export default function News({bgColor = "bg-black-70"}) {
   // Split newsData into four equal groups
   const itemsPerGroup = Math.ceil(newsData.length / 4);
   const firstGroup = newsData.slice(0, itemsPerGroup).slice(0, 6);
@@ -248,7 +248,7 @@ export default function News() {
   const fourthGroup = newsData.slice(itemsPerGroup * 3).slice(0, 6);
 
   return (
-    <div className="bg-black-70 py-20 space-y-16 relative">
+    <div className={`${bgColor} py-20 space-y-16 relative`}>
       
       <div className="max-w-wrapper text-center z-10 relative">
         <h2 className="text-5xl tracking-tight font-bold mb-6 text-white">Advancing Knowledge, Shaping the Future</h2>
