@@ -13,7 +13,8 @@
   --color-stanford-red-light: #AB1A1A;
   --color-humsci-blue: #00505c;
   --color-humsci-gold: #dccf99;
-  --color-semantic-bg-charcoal: hsla(220, 4%, 31%, 1);
+  --color-humsci-gold-dark: #8d7743;
+  --color-semantic-bg-charcoal: #4d4f53;
   --color-beige: hsla(42, 19%, 89%, 1);
   --color-cardinal-red: hsla(0, 74%, 32%, 1);
   --color-cardinal-red-dark: hsla(0, 100%, 25%, 1);
@@ -80,4 +81,10 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+}
+
+.max-w-wrapper {
+  @apply mx-auto;
+  @apply px-16;
+  max-width: var(--max-width);
 }

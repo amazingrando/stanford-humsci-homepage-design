@@ -13,7 +13,7 @@ import {
 import { wrap } from "@motionone/utils";
 import bg from "@/app/data/heroBackgrounds.json";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCompass } from '@fortawesome/pro-regular-svg-icons'
+import { faCompass } from '@fortawesome/pro-thin-svg-icons'
 
 function ParallaxText({ baseVelocity = 100, className, bgImages }) {
   const baseX = useMotionValue(0);
@@ -81,34 +81,32 @@ function ParallaxText({ baseVelocity = 100, className, bgImages }) {
 
 const Hero = () => {
   return (
-    <div className="min-h-[600vh]">
 
-      <div className="h-screen max-h-[1200px] bg-semantic-bg-charcoal text-color-cardinal-red z-10 overflow-hidden relative">
-        
-        <div className="flex flex-col justify-start">
-          <ParallaxText baseVelocity={-2} className="text-4xl font-bold text-white" bgImages={bg.heroBackgrounds.group1}/>
-          <ParallaxText baseVelocity={2} className="text-4xl font-bold text-white" bgImages={bg.heroBackgrounds.group2}/>
-          <ParallaxText baseVelocity={-2} className="text-4xl font-bold text-white" bgImages={bg.heroBackgrounds.group3}/>
-          <ParallaxText baseVelocity={2} className="text-4xl font-bold text-white" bgImages={bg.heroBackgrounds.group4}/>
-          <ParallaxText baseVelocity={-2} className="text-4xl font-bold text-white" bgImages={bg.heroBackgrounds.group5}/>
-          <ParallaxText baseVelocity={2} className="text-4xl font-bold text-white" bgImages={bg.heroBackgrounds.group6}/>
-        </div>
-
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="bg-gradient-to-b from-cardinal-red to-stanford-red-light rounded shadow-2xl/40 text-white text-center p-16 relative z-40">
-            <h1 className="space-y-2">
-              <span className="block text-7xl font-bold tracking-tight">Research & Learning </span> 
-              <span className="block text-6xl text-white/80 tracking-tight">are the foundations of discovery.</span>
-            </h1>
-            <a href="#" className="text-2xl inline-block mt-8 px-8 py-4 font-bold border top-0 border-humsci-gold hover:shadow-xl/30 relative  hover:scale-105 hover:bg-cardinal-red-dark transition-all duration-300">
-              <FontAwesomeIcon icon={faCompass} className="mr-2 text-humsci-gold" />
-              Explore What Moves You
-            </a>
-          </div>
-        </div>
-
-        <div className="absolute inset-0 bg-gradient-to-b from-semantic-bg-charcoal via-semantic-bg-charcoal to-black mix-blend-multiply z-30" />
+    <div className="h-screen max-h-[1200px] bg-semantic-bg-charcoal text-color-cardinal-red z-10 overflow-hidden relative">
+      
+      <div className="flex flex-col justify-start">
+        <ParallaxText baseVelocity={-2} className="text-4xl font-bold text-white" bgImages={bg.heroBackgrounds.group1}/>
+        <ParallaxText baseVelocity={2} className="text-4xl font-bold text-white" bgImages={bg.heroBackgrounds.group2}/>
+        <ParallaxText baseVelocity={-2} className="text-4xl font-bold text-white" bgImages={bg.heroBackgrounds.group3}/>
+        <ParallaxText baseVelocity={2} className="text-4xl font-bold text-white" bgImages={bg.heroBackgrounds.group4}/>
+        <ParallaxText baseVelocity={-2} className="text-4xl font-bold text-white" bgImages={bg.heroBackgrounds.group5}/>
+        <ParallaxText baseVelocity={2} className="text-4xl font-bold text-white" bgImages={bg.heroBackgrounds.group6}/>
       </div>
+
+      <div className="absolute inset-0 flex items-center justify-center">
+        <div className="bg-gradient-to-b from-cardinal-red to-stanford-red-light rounded shadow-2xl/40 text-white text-center p-16 relative z-40">
+          <h1 className="space-y-2">
+            <span className="block text-7xl font-bold tracking-tight">Research & Learning </span> 
+            <span className="block text-6xl text-white/80 tracking-tight">are the foundations of discovery.</span>
+          </h1>
+          <a href="#" className="text-2xl inline-block mt-8 px-8 py-4 font-bold border top-0 border-humsci-gold hover:shadow-xl/30 relative  hover:scale-105 hover:bg-cardinal-red-dark transition-all duration-300">
+            <FontAwesomeIcon icon={faCompass} className="mr-2 text-humsci-gold" />
+            Explore What Moves You
+          </a>
+        </div>
+      </div>
+
+      <div className="absolute inset-0 bg-gradient-to-b from-semantic-bg-charcoal via-semantic-bg-charcoal to-black mix-blend-multiply z-30" />
     </div>
   );
 };
