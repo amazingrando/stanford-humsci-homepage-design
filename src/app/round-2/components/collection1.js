@@ -1,18 +1,30 @@
+'use client'
+
 import newsDataJson from "@/data/newsData.json";
 import Image from "next/image";
+import { motion, useInView } from "framer-motion";
+import React, { useRef } from "react";
 
 const Card = ({ title, image, date, description, useDefaultImage = false }) => {
+  const targetRef = useRef(null);
+  const isInView = useInView(targetRef, { once: true });
   const defaultImage = "https://placehold.co/600x400"
   
   return (
-    <div className="bg-white border border-humsci-gold-dark text-humsci-gold-dark">
+    <motion.div 
+      ref={targetRef} 
+      initial={{ opacity: 0.25, y: 200 }}
+      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0.25, y: 200 }}
+      transition={{ duration: 0.5 }}
+      className="bg-white border border-humsci-gold-dark text-humsci-gold-dark"
+    >
       <Image src={defaultImage} alt={title} width={600} height={400} className="block" />
       <div className="p-6">
         <p className="text-sm mb-2 font-bold text-semantic-bg-charcoal">{date}</p>
         <h2 className="text-2xl tracking-tight font-medium text-cardinal-red-dark mb-4">{title}</h2>
         <p className="text-base text-semantic-bg-charcoal">{description}</p>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
@@ -28,8 +40,17 @@ export default function Collection1() {
           <a href="#" className="text-lg inline-block mt-12 px-4 py-2 font-bold border border-humsci-gold hover:bg-white hover:text-stanford-red transition-all duration-300">Add an Award or Honor</a>
         </div>
         <div className="col-span-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-          {newsDataJson.newsData.map((item) => (
-            <Card key={item.title} title={item.title} image={item.image} date={item.date} description={item.description} />
+          {newsDataJson.newsData.map((item, index) => (
+            <motion.div
+              key={item.title}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
+              className="flex items-stretch"
+            >
+              <Card key={item.title} title={item.title} image={item.image} date={item.date} description={item.description} />
+            </motion.div>
           ))}
         </div>
       </div>
