@@ -26,8 +26,8 @@ export default function HeroParallax() {
         </motion.div>
       </div>
 
-      <div className="z-10 relative text-center max-w-4xl space-y-4">
-        <p className="text-white/90 text-3xl font-bold uppercase tracking-wide text-shadow-lg/40">Research at the Heart of Stanford</p>
+      <div className="z-10 relative text-center max-w-4xl space-y-4 bg-neutrals-black/40 p-8 rounded-lg">
+        <p className="text-white text-3xl font-bold uppercase tracking-wide text-shadow-lg/40">Research at the Heart of Stanford</p>
         <h1 className="text-white text-balance text-8xl leading-[90%] font-bold text-shadow-lg/40">Two seasons on Jasper Ridge</h1>
         
         <a href="#" className="text-xl inline-block mt-8 px-6 py-3 font-bold border border-cardinal-red-dark bg-cardinal-red-dark text-white hover:bg-white hover:text-cardinal-red-dark transition-all duration-300">
