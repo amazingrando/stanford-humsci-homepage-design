@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="min-h-[600vh]">
       <HeroParallax />
-      <div className="max-w-wrapper grid gap-12 p-12 bg-black-50">
+      <div className="max-w-wrapper grid gap-12 p-12">
         <TextAndMediaParallax />
         <ParallaxFeature />
       </div>
