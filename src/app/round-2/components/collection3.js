@@ -39,7 +39,7 @@ export default function Collection3() {
           <h3 className="text-lg text-balance">Explore recent books published by faculty in the School of Humanities and Sciences—covering groundbreaking research, fresh perspectives, and influential scholarship.</h3>
           <p className="mt-8 flex justify-center items-center gap-8">
             <a href="#" className="text-lg px-4 py-2 font-bold border border-humsci-gold hover:bg-white hover:text-stanford-red transition-all duration-300">Submit a Book</a>
-            <span className="flex items-center gap-2"><a href="#" className="text-white/90 hover:text-white hover:underline transition-all duration-300">View All Books</a>
+            <span className="flex items-center gap-2"><a href="#" className="text-white/90 hover:text-white hover:underline transition-all duration-300">Explore All Books</a>
             <ArrowRightIcon className="size-4" /></span>
           </p>
         </div>
