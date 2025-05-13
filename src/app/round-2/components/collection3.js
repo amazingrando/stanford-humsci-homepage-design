@@ -25,22 +25,21 @@ const Card = ({ title, image, date, description, useDefaultImage = false }) => {
   )
 }
 
-export default function Collection2() {
+export default function Collection3() {
   const swiperRef = useRef(null);
   const [isBeginning, setIsBeginning] = useState(true);
   const [isEnd, setIsEnd] = useState(false);
 
   return (
-    <div className="bg-palo-alto-dark py-20">
-      <div className="max-w-wrapper grid grid-cols-1 md:grid-cols-7 gap-12">
-        <div className="col-span-2 text-white">
-          <p className="text-humsci-gold text-lg tracking-wide uppercase font-bold mb-6 text-balance">Faculty Awards</p>
-          <h2 className="text-5xl tracking-tight font-bold mb-6 text-balance">Honoring the Impact of H&S Faculty
-          </h2>
-          <h3 className="text-lg text-balance">Faculty across the School of Humanities and Sciences continue to earn distinguished awards for their innovative research, transformative teaching, and contributions to global scholarship.</h3>
-          <a href="#" className="text-lg inline-block mt-12 px-4 py-2 font-bold border border-humsci-gold hover:bg-white hover:text-stanford-red transition-all duration-300">Add an Award or Honor</a>
+    <div className="bg-plum-dark py-20">
+      <div className="max-w-wrapper space-y-12">
+        <div className="text-white text-center max-w-2xl mx-auto">
+          <p className="text-humsci-gold text-lg tracking-wide uppercase font-bold mb-6 text-balance">Books in Brief</p>
+          <h2 className="text-5xl tracking-tight font-bold mb-6 text-balance">Books by H&S Faculty</h2>
+          <h3 className="text-lg text-balance">Explore recent books published by faculty in the School of Humanities and Sciences—covering groundbreaking research, fresh perspectives, and influential scholarship.</h3>
+          <a href="#" className="text-lg inline-block mt-12 px-4 py-2 font-bold border border-humsci-gold hover:bg-white hover:text-stanford-red transition-all duration-300">Submit a Book</a>
         </div>
-        <div className="col-span-5">
+        <div className="">
           <div className="relative">
             <Swiper
               onSwiper={(swiper) => {
@@ -52,7 +51,7 @@ export default function Collection2() {
                 setIsBeginning(swiper.isBeginning);
                 setIsEnd(swiper.isEnd);
               }}
-              slidesPerView={3}
+              slidesPerView={4}
               spaceBetween={30}
               className="mySwiper max-w-full flex items-stretch"
             >
@@ -63,7 +62,7 @@ export default function Collection2() {
               ))}
               <SwiperSlide className="!h-auto">
                 <a href="#" className="bg-transparent text-white border border-humsci-gold h-full flex items-center justify-center hover:bg-white hover:text-cardinal-red-dark transition-all duration-300">
-                  <h2 className="text-2xl tracking-tight font-medium flex items-center gap-2">Explore All Awards <ArrowRightIcon className="size-4" /></h2>
+                  <h2 className="text-2xl tracking-tight font-medium flex items-center gap-2">Explore All Books <ArrowRightIcon className="size-4" /></h2>
                 </a>
               </SwiperSlide>
             </Swiper>
