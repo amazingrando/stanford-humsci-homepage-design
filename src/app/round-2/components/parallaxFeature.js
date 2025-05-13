@@ -9,6 +9,7 @@ import { motion,
   useScroll,
   useTransform,
   useSpring } from "framer-motion";
+import ButtonGhost from "@/components/buttonGhost";
 
 export default function ParallaxFeature() {
   const targetRef = useRef(null);
@@ -55,9 +56,9 @@ export default function ParallaxFeature() {
         </h2>
         <p className="text-balance text-lg">As part of a Department of History tour, student Christian Robles-Baez engages with the David Rumsey Map Center’s expansive digital archive, gaining firsthand experience with the unique cartographic tools and resources available to Stanford scholars.
         </p>
-        <a href="#" className="text-xl inline-block mt-8 px-6 py-3 font-bold border top-0 border-humsci-gold hover:bg-white hover:text-cardinal-red-dark transition-all duration-300">
-            Explore What Moves You
-          </a>
+        <ButtonGhost>
+          Explore What Moves You
+        </ButtonGhost>
       </div>
 
       

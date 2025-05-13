@@ -1,14 +1,10 @@
 'use client'
 
 import Image from "next/image";
-import bgImage from "@/assets/images/A5091FDF-29FD-49AF-89A6-9C24367E3C1C.png"
-import { motion,
-  useInView,
-  useMotionValueEvent,
-  useScroll,
-  useTransform, } from "framer-motion";
-import React, { useEffect, useRef } from "react";
+import { motion, useInView } from "framer-motion";
+import React, { useRef } from "react";
 import newsDataJson from "@/data/newsData.json";
+import ButtonGhost from "@/components/buttonGhost";
 
 const Card = ({ title, image, date, description, useDefaultImage = false }) => {
   const targetRef = useRef(null);
@@ -76,6 +72,11 @@ export default function News({bgColor = "bg-black-70"}) {
               ))}
             </motion.div>
           ))}
+        </div>
+        <div className="text-center">
+          <ButtonGhost className="text-white">
+            View All News
+          </ButtonGhost>
         </div>
       </div>
     </div>
