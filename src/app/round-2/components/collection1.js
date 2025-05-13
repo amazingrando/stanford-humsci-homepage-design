@@ -18,7 +18,7 @@ const Card = ({ title, image, date, description, useDefaultImage = false }) => {
 
 export default function Collection1() {
   return (
-    <div className="bg-cardinal-red-dark min-h-screen py-20">
+    <div className="bg-cardinal-red-dark py-20">
       <div className="max-w-wrapper grid grid-cols-1 md:grid-cols-7 gap-12">
         <div className="col-span-2 text-white">
           <p className="text-humsci-gold text-lg tracking-wide uppercase font-bold mb-6 text-balance">Faculty Awards</p>

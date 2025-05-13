@@ -13,12 +13,6 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
-    "@motionone/utils": "^10.18.0",
-    "motion": "^12.9.7",
-    "next": "15.3.1",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "cheerio": "^1.0.0-rc.12",
     "@fortawesome/duotone-light-svg-icons": "^6.7.2",
     "@fortawesome/duotone-regular-svg-icons": "^6.7.2",
     "@fortawesome/duotone-thin-svg-icons": "^6.7.2",
@@ -37,7 +31,15 @@
     "@fortawesome/sharp-light-svg-icons": "^6.7.2",
     "@fortawesome/sharp-regular-svg-icons": "^6.7.2",
     "@fortawesome/sharp-solid-svg-icons": "^6.7.2",
-    "@fortawesome/sharp-thin-svg-icons": "^6.7.2"
+    "@fortawesome/sharp-thin-svg-icons": "^6.7.2",
+    "@heroicons/react": "^2.2.0",
+    "@motionone/utils": "^10.18.0",
+    "cheerio": "^1.0.0-rc.12",
+    "motion": "^12.9.7",
+    "next": "15.3.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "swiper": "^11.2.6"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.6",

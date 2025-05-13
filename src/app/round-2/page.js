@@ -3,6 +3,7 @@ import News from "@/app/round-2/components/news";
 import TextAndMedia from "@/app/round-2/components/textAndMedia";
 import ParallaxFeature from "@/app/round-2/components/parallaxFeature";
 import Collection1 from "@/app/round-2/components/collection1";
+import Collection2 from "@/app/round-2/components/collection2";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       </div>
       <News bgColor="bg-black-90"/>
       <Collection1 />
+      <Collection2 />
     </div>
   );
 }

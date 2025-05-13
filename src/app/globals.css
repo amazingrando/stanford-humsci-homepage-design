@@ -88,3 +88,7 @@
   @apply px-16;
   max-width: var(--max-width);
 }
+
+.swiper-wrapper {
+  @apply flex items-stretch;
+}
