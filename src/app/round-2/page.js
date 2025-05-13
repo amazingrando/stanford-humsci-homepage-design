@@ -1,7 +1,7 @@
-import HeroParallax from "@/app/round-1/components/heroParallax";
-import News from "@/app/round-1/components/news";
-import TextAndMediaParallax from "@/app/round-1/components/textAndMediaParallax";
-import ParallaxFeature from "@/app/round-1/components/parallaxFeature";
+import HeroParallax from "@/app/round-2/components/heroParallax";
+import News from "@/app/round-2/components/news";
+import TextAndMediaParallax from "@/app/round-2/components/textAndMediaParallax";
+import ParallaxFeature from "@/app/round-2/components/parallaxFeature";
 
 export default function Home() {
   return (
