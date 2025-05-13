@@ -51,7 +51,7 @@ export default function ParallaxFeature() {
       </motion.div>
 
       <div className="z-10 relative max-w-4xl space-y-4 bg-cardinal-red-dark text-white p-15 h-full w-1/3 pt-32">
-        <h3 className="text-balance text-xl font-bold uppercase text-humsci-gold">Charting the Past with Digital Maps</h3>
+        <h3 className="text-balance text-xl font-bold uppercase text-humsci-gold">Digitally charting the past</h3>
         <h2 className="text-balance text-4xl font-bold">History Student Christian Robles-Baez Explores Rare Cartographic Treasures at the David Rumsey Map Center
         </h2>
         <p className="text-balance text-lg">As part of a Department of History tour, student Christian Robles-Baez engages with the David Rumsey Map Center’s expansive digital archive, gaining firsthand experience with the unique cartographic tools and resources available to Stanford scholars.
