@@ -75,7 +75,7 @@ export default function News({bgColor = "bg-black-70"}) {
         </div>
         <div className="text-center">
           <ButtonGhost className="text-white">
-            View All News
+            View all news
           </ButtonGhost>
         </div>
       </div>

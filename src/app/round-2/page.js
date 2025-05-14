@@ -6,6 +6,8 @@ import Collection1 from "@/app/round-2/components/collection1";
 import Collection2 from "@/app/round-2/components/collection2";
 import Collection3 from "@/app/round-2/components/collection3";
 import AnimatedBlock from "@/app/round-2/components/animatedBlock";
+import TextBox from "@/app/round-2/components/textBox";
+import bgImage from "@/assets/images/bldg110_14_3200x1532-1006439883.jpg"
 
 export default function Home() {
   return (
@@ -18,8 +20,9 @@ export default function Home() {
       <News bgColor="bg-black-90"/>
       <Collection1 />
       <Collection2 />
-      <Collection3 />
       <AnimatedBlock />
+      <Collection3 />
+      <TextBox bgImage={bgImage}/>
       <Collection3 />
     </div>
   );

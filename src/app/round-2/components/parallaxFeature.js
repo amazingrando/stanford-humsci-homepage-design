@@ -57,7 +57,7 @@ export default function ParallaxFeature() {
         <p className="text-balance text-lg">As part of a Department of History tour, student Christian Robles-Baez engages with the David Rumsey Map Center’s expansive digital archive, gaining firsthand experience with the unique cartographic tools and resources available to Stanford scholars.
         </p>
         <ButtonGhost>
-          Explore What Moves You
+          Explore what moves you
         </ButtonGhost>
       </div>
 
