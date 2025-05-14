@@ -38,7 +38,7 @@ export default function Collection2() {
           <h2 className="text-5xl tracking-tight font-bold mb-6 text-balance">Honoring the Impact of H&S Faculty
           </h2>
           <h3 className="text-lg text-balance">Faculty across the School of Humanities and Sciences continue to earn distinguished awards for their innovative research, transformative teaching, and contributions to global scholarship.</h3>
-          <a href="#" className="text-lg inline-block mt-12 px-4 py-2 font-bold border border-humsci-gold hover:bg-white hover:text-stanford-red transition-all duration-300">Add an Award or Honor</a>
+          <a href="#" className="text-lg inline-block mt-12 px-4 py-2 font-bold border border-humsci-gold hover:bg-white hover:text-stanford-red transition-all duration-300">Add an award or honor</a>
           <p className="mt-8 flex items-center gap-2">
             <a href="#" className="text-white/90 hover:text-white hover:underline transition-all duration-300">Explore All Awards</a>
             <ArrowRightIcon className="size-4" />

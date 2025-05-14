@@ -23,7 +23,9 @@ export default function Home() {
       <AnimatedBlock />
       <Collection3 />
       <TextBox bgImage={bgImage}/>
-      <Collection3 />
+      <div className="bg-white min-h-[100vh]">
+
+      </div>
     </div>
   );
 }
