@@ -22,7 +22,6 @@ export default function RootLayout({ children }) {
       <body
         className={`${sourceSansPro.variable} font-sans antialiased relative`}
       >
-        <Header />
         {children}
       </body>
     </html>

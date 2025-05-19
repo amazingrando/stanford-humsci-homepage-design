@@ -7,12 +7,20 @@ export default function Home() {
       <ul className="flex flex-row gap-4 text-2xl">
         <li>
           <a href="#" className="border border-white rounded-full px-4 py-2 hover:underline">
-            <Link href="/round-2">Round 2</Link>
+            <Link href="/round-3">Round 3</Link>
           </a>
         </li>
       </ul>
       <div className="text-center">
-        <h2 className="text-white text-2xl font-bold">Round 1</h2>
+        <h2 className="text-white text-2xl font-bold">Round 2</h2>
+        <ul className="flex flex-row justify-center gap-4 text-base">
+          <li>
+            <a href="#" className="hover:underline">
+              <Link href="/round-2">Round 2</Link>
+            </a>
+          </li>
+        </ul>
+        <h2 className="text-white text-2xl font-bold mt-4">Round 1</h2>
         <ul className="flex flex-row gap-4 text-base">
           <li>
             <a href="#" className="hover:underline">
