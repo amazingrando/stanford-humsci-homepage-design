@@ -13,6 +13,8 @@ export default function HeroParallax() {
   });
 
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+  const textY = useTransform(scrollYProgress, [0, 1], ["0%", "400%"]);
+  const textOpacity = useTransform(scrollYProgress, [0, 0.1], [1, 0]);
 
   return (
     <div className="h-screen w-full relative overflow-hidden flex flex-col items-center justify-center">
@@ -26,14 +28,40 @@ export default function HeroParallax() {
         </motion.div>
       </div>
 
-      <div className="z-10 relative text-center max-w-4xl space-y-4 bg-neutrals-black/40 p-8 rounded-lg mt-32">
-        <p className="text-white text-3xl font-bold uppercase tracking-wide text-shadow-lg/40">Research at the Heart of Stanford</p>
-        <h1 className="text-white text-balance text-8xl leading-[90%] font-bold text-shadow-lg/40">Two seasons on Jasper Ridge</h1>
+      <motion.div 
+        style={{ y: textY, opacity: textOpacity }}
+        initial={{ y: 20 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="z-10 relative text-center max-w-4xl space-y-4 bg-neutrals-black/40 p-8 rounded-lg mt-32"
+      >
+        <motion.p 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+          className="text-white text-3xl font-bold uppercase tracking-wide text-shadow-lg/40"
+        >
+          Research at the Heart of Stanford
+        </motion.p>
+        <motion.h1 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+          className="text-white text-balance text-8xl leading-[90%] font-bold text-shadow-lg/40"
+        >
+          Two seasons on Jasper Ridge
+        </motion.h1>
         
-        <a href="#" className="text-xl inline-block mt-8 px-6 py-3 font-bold border border-cardinal-red-dark bg-cardinal-red-dark text-white hover:bg-white hover:text-cardinal-red-dark transition-all duration-300">
+        <motion.a 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
+          href="#" 
+          className="text-xl inline-block mt-8 px-6 py-3 font-bold border border-cardinal-red-dark bg-cardinal-red-dark text-white hover:bg-white hover:text-cardinal-red-dark"
+        >
           Follow the Research Journey
-        </a>
-      </div>
+        </motion.a>
+      </motion.div>
     </div>
   );
 }
