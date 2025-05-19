@@ -57,8 +57,8 @@ export default function Awards() {
             {awardsData.slice(1).map((award) => (
               <div key={award.title} className="pb-4">
                 <a href="#" className="group flex flex-row gap-4">
+                  <h3 className="text-2xl leading-tight font-semibold group-hover:underline decoration-1 group-hover:text-cardinal-red underline-offset-4 tracking-tight">{award.title}</h3>
                   <Image src={award.image} alt={award.title} className="w-[150px] h-full" />
-                  <h3 className="text-xl leading-tight text-balance font-semibold group-hover:underline decoration-1 group-hover:text-cardinal-red underline-offset-4 tracking-tight">{award.title}</h3>
                 </a>
               </div>
             ))}
