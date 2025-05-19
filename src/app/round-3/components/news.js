@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { motion, useInView } from "framer-motion";
 import React, { useRef } from "react";
-import newsDataJson from "@/data/newsData.json";
+import { newsData } from '@/data/newsData';
 import ButtonGhost from "@/components/buttonGhost";
 
 const Card = ({ title, image, date, description, useDefaultImage = false }) => {
@@ -21,7 +21,7 @@ const Card = ({ title, image, date, description, useDefaultImage = false }) => {
     >
       <Image src={useDefaultImage ? defaultImage : image} alt={title} width={600} height={400} className="block" />
       <div className="p-6">
-        <p className="text-sm mb-2 font-bold text-semantic-bg-charcoal">{date}</p>
+        {/* <p className="text-sm mb-2 font-bold text-semantic-bg-charcoal">{date}</p> */}
         <h2 className="text-3xl tracking-tight font-medium text-cardinal-red-dark mb-4">{title}</h2>
         <p className="text-base text-semantic-bg-charcoal">{description}</p>
       </div>
@@ -31,7 +31,7 @@ const Card = ({ title, image, date, description, useDefaultImage = false }) => {
 
 export default function News({bgColor = "bg-black-70"}) {
   // Get first 6 items for the three columns
-  const displayItems = newsDataJson.newsData;
+  const displayItems = newsData;
 
   return (
     <div className={`${bgColor} py-20 space-y-16 relative`}>

@@ -1,6 +1,6 @@
 'use client'
 
-import newsDataJson from "@/data/newsData.json";
+import { newsData } from '@/data/newsData';
 import Image from "next/image";
 import { motion, useInView } from "framer-motion";
 import React, { useRef } from "react";
@@ -45,7 +45,7 @@ export default function Collection1() {
           </p>
         </div>
         <div className="col-span-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-          {newsDataJson.newsData.map((item, index) => (
+          {newsData.map((item, index) => (
             <motion.div
               key={item.title}
               initial={{ opacity: 0, y: 20 }}

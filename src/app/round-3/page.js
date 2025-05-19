@@ -9,6 +9,7 @@ import AnimatedBlock from "@/app/round-3/components/animatedBlock";
 import TextBox from "@/app/round-3/components/textBox";
 import bgImage from "@/assets/images/bldg110_14_3200x1532-1006439883.jpg"
 import Header from "@/components/header.js";
+import Awards from "@/app/round-3/components/awards";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
           <TextAndMedia />
           <ParallaxFeature />
           <News bgColor="bg-transparent"/>
+          <Awards />
           <Collection1 />
           <Collection2 />
           <AnimatedBlock />

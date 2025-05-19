@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export default function TextAndMedia() {
   return (
-    <div className="relative bg-white min-h-[500px] flex flex-col">
+    <div className="relative bg-black-10 min-h-[500px] flex flex-col">
       <div className="flex-1 max-w-wrapper grid grid-cols-8 gap-16">
 
         <div className="col-span-4 self-center py-20 text-neutrals-black">

@@ -1,6 +1,6 @@
 'use client'
 
-import newsDataJson from "@/data/newsData.json";
+import { newsData } from '@/data/newsData';
 import Image from "next/image";
 import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -60,7 +60,7 @@ export default function Collection2() {
               spaceBetween={30}
               className="mySwiper max-w-full flex items-stretch"
             >
-              {newsDataJson.newsData.map((item, index) => (
+              {newsData.map((item, index) => (
                 <SwiperSlide key={item.title} className="!h-auto">
                   <Card title={item.title} image={item.image} date={item.date} description={item.description} />
                 </SwiperSlide>
