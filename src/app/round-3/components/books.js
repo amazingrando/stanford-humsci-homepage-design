@@ -12,7 +12,7 @@ import { ChevronDoubleRightIcon, ChevronDoubleLeftIcon, ArrowRightIcon } from '@
 
 const Card = ({ title, headshot, book }) => {  
   return (
-    <div className="relative p-8 pb-4 space-y-8 bg-black-10">
+    <div className="relative p-8 pb-4 space-y-8 bg-black-10 rounded-sm">
       <figure className="relative">
         <Image src={headshot} alt={title} width={70} className="block rounded-full absolute -bottom-4 -left-4 shadow-lg/40" />
         <Image src={book} alt={title} width={600} height={400} className="block ring-1 ring-black/20" />
