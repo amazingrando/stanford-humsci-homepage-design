@@ -5,13 +5,15 @@
   "main": "download-images.js",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "dev:all": "concurrently \"next dev\" \"storybook dev -p 6006\"",
-    "build": "next build",
+    "dev:next": "next dev",
+    "prebuild": "npm run build-storybook",
+    "build:next": "next build",
+    "build-storybook": "rm -rf public/storybook && storybook build -o storybook-static && mv storybook-static public/storybook",
+    "build": "npm run prebuild && npm run build:next",
     "start": "next start",
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "dev": "concurrently \"npm run dev:next\" \"npm run storybook\""
   },
   "dependencies": {
     "@fortawesome/duotone-light-svg-icons": "^6.7.2",

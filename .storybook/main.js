@@ -14,7 +14,14 @@ const config = {
   ],
   "framework": {
     "name": "@storybook/nextjs",
-    "options": {}
+    "options": {
+      "builder": {
+        "name": "@storybook/builder-webpack5",
+        "options": {
+          "outputDir": ".next/storybook"
+        }
+      }
+    }
   },
   "staticDirs": [
     "../public"
