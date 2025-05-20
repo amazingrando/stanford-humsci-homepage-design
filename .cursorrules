@@ -1,3 +1,5 @@
 Start all chats with ⚔️
 
 Don't use typescript.
+
+When you add to storybook, do not add "tags: ['autodocs']".

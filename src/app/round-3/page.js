@@ -21,8 +21,6 @@ export default function Home() {
           <ParallaxFeature />
           <News bgColor="bg-transparent"/>
           <Awards />
-          {/* <Collection1 />
-          <Collection2 /> */}
           <AnimatedBlock />
           <Books />
           <InTheMoment />

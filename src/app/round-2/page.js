@@ -8,24 +8,28 @@ import Collection3 from "@/app/round-2/components/collection3";
 import AnimatedBlock from "@/app/round-2/components/animatedBlock";
 import TextBox from "@/app/round-2/components/textBox";
 import bgImage from "@/assets/images/bldg110_14_3200x1532-1006439883.jpg"
+import Header from "@/components/header.js";
 
 export default function Home() {
   return (
-    <div className="min-h-[600vh]">
-      <HeroParallax />
-      <div className="max-w-wrapper grid gap-12 p-12">
-        <TextAndMedia />
-        <ParallaxFeature />
-      </div>
-      <News bgColor="bg-black-90"/>
-      <Collection1 />
-      <Collection2 />
-      <AnimatedBlock />
-      <Collection3 />
-      <TextBox bgImage={bgImage}/>
-      <div className="bg-white min-h-[100vh]">
+    <>
+      <Header />
+      <div className="min-h-[600vh]">
+        <HeroParallax />
+        <div className="max-w-wrapper grid gap-12 p-12">
+          <TextAndMedia />
+          <ParallaxFeature />
+        </div>
+        <News bgColor="bg-black-90"/>
+        <Collection1 />
+        <Collection2 />
+        <AnimatedBlock />
+        <Collection3 />
+        <TextBox bgImage={bgImage}/>
+        <div className="bg-white min-h-[100vh]">
 
+        </div>
       </div>
-    </div>
+    </>
   );
 }

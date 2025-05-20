@@ -1,6 +1,5 @@
 'use client'
 
-import { newsData } from '@/data/newsData';
 import Image from "next/image";
 import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -9,6 +8,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Pagination, Navigation } from 'swiper/modules';
 import { ChevronDoubleRightIcon, ChevronDoubleLeftIcon, ArrowRightIcon } from '@heroicons/react/24/solid'
+import { newsData as defaultNewsData } from '@/data/newsData';
 
 const Card = ({ title, image, date, description, useDefaultImage = false }) => {
   const defaultImage = "https://placehold.co/600x400"
@@ -25,7 +25,7 @@ const Card = ({ title, image, date, description, useDefaultImage = false }) => {
   )
 }
 
-export default function Collection2() {
+export default function Collection2({ newsData: propNewsData = defaultNewsData }) {
   const swiperRef = useRef(null);
   const [isBeginning, setIsBeginning] = useState(true);
   const [isEnd, setIsEnd] = useState(false);
@@ -60,7 +60,7 @@ export default function Collection2() {
               spaceBetween={30}
               className="mySwiper max-w-full flex items-stretch"
             >
-              {newsData.map((item, index) => (
+              {propNewsData.map((item, index) => (
                 <SwiperSlide key={item.title} className="!h-auto">
                   <Card title={item.title} image={item.image} date={item.date} description={item.description} />
                 </SwiperSlide>
