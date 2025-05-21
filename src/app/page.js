@@ -9,7 +9,7 @@ export default function Home() {
           <Link href="/round-3/c" className="border border-white rounded-full px-4 py-2 hover:underline">Round 3C</Link>
         </li>
         <li>
-          <Link href="/round-3c" className="border border-white rounded-full px-4 py-2 hover:underline">Round 3D</Link>
+          <Link href="/round-3/d" className="border border-white rounded-full px-4 py-2 hover:underline">Round 3D</Link>
         </li>
       </ul>
       <div className="text-center">
