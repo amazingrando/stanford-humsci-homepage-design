@@ -70,7 +70,7 @@ export default function Home() {
           {/* <TextBox bgImage={bgImage}/> */}
           
           <InTheMoment />
-          <AnimatedBlock />
+          {/* <AnimatedBlock /> */}
           
         </div>
       </motion.div>
