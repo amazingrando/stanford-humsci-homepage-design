@@ -61,19 +61,17 @@ export default function Home() {
             <TextAndMedia2 />
           </section>
 
-          {/* <ParallaxFeature /> */}
           <div ref={newsRef}>
             <News bgColor="bg-transparent"/>
           </div>
+          
           <Awards />
           <Books />
-          {/* <TextBox bgImage={bgImage}/> */}
-          
-          <InTheMoment />
-          {/* <AnimatedBlock /> */}
           
         </div>
-          <TextBox bgImage={newImage}/>
+
+        <InTheMoment />
+        <TextBox bgImage={newImage}/>
       </motion.div>
 
       <footer>
