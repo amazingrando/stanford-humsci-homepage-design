@@ -16,6 +16,7 @@ import whiteplaza from "@/assets/images/moment/1-2025-white-plaza-observation-3.
 import democracy from "@/assets/images/moment/democracy-legacy-admissions_2368.webp"
 import mlk from "@/assets/images/moment/mlk-memorial-church-0189-enhanced-nr.webp"
 import rumsey from "@/assets/images/moment/rumsey-history-0283-enhanced-nr.webp"
+import Button from "@/components/button.js";
 
 const inTheMomentData = [
   {
@@ -43,7 +44,7 @@ const inTheMomentData = [
     image: mlk,
   },
   {
-    description: <div class="text-long"><p><em><strong>Democracy and Disagreement </strong></em><strong>starts Jan. 7.</strong><em> </em><a href="https://explorecourses.stanford.edu/search?view=catalog&amp;filter-coursestatus-Active=on&amp;page=0&amp;catalog=&amp;academicYear=&amp;q=PHIL+3%3A+Democracy+and+Disagreement&amp;collapse="><strong>Enroll today!</strong></a></p><p>H&amp;S Dean Debra Satz and Law Professor Emeritus Paul Brest once again host their course featuring discussions with faculty on opposing sides of issues. ​Attend the weekly conversations ​for one unit of credit; attend weekly ​discussion seminars for an ​additional unit. The class happens Tuesdays at 3 p.m. in CEMEX Auditorium. <a href="https://humsci.stanford.edu/events/democracy-and-disagreement">See the topics and speaker lineup for this quarter.</a></p><p>Each conversation is also open to the Stanford community. Discussion groups are open to enrolled undergraduates only.</p><p>Photo by LiPo Ching/Stanford University</p></div>,
+    description: <div className="text-long"><p><em><strong>Democracy and Disagreement </strong></em><strong>starts Jan. 7.</strong><em> </em><a href="https://explorecourses.stanford.edu/search?view=catalog&amp;filter-coursestatus-Active=on&amp;page=0&amp;catalog=&amp;academicYear=&amp;q=PHIL+3%3A+Democracy+and+Disagreement&amp;collapse="><strong>Enroll today!</strong></a></p><p>H&amp;S Dean Debra Satz and Law Professor Emeritus Paul Brest once again host their course featuring discussions with faculty on opposing sides of issues. ​Attend the weekly conversations ​for one unit of credit; attend weekly ​discussion seminars for an ​additional unit. The class happens Tuesdays at 3 p.m. in CEMEX Auditorium. <a href="https://humsci.stanford.edu/events/democracy-and-disagreement">See the topics and speaker lineup for this quarter.</a></p><p>Each conversation is also open to the Stanford community. Discussion groups are open to enrolled undergraduates only.</p><p>Photo by LiPo Ching/Stanford University</p></div>,
     caption: "Photo by LiPo Ching/Stanford University",
     date: "January 6, 2025",
     image: democracy,
@@ -78,7 +79,7 @@ export default function InTheMoment() {
     <div className="pb-16">
       <div className="!px-32 max-w-wrapper">
         <div className="">
-          <h2 class="text-5xl tracking-tight font-bold mb-6 text-balance text-cardinal-red">In the Moment</h2>
+          <h2 className="text-5xl tracking-tight font-bold mb-6 text-balance text-cardinal-red">In the Moment</h2>
         </div>
       </div>
       <div className="flex items-center justify-between mb-4 !px-32 max-w-wrapper">
@@ -123,6 +124,11 @@ export default function InTheMoment() {
             </SwiperSlide>
           ))}
         </Swiper>
+      </div>
+      <div className="!px-32 mt-8 max-w-wrapper">
+        <div className="">
+          <Button>Explore all moments</Button>
+        </div>
       </div>
     </div>
   );

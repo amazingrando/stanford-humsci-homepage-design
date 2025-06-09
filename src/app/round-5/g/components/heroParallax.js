@@ -59,7 +59,7 @@ export default function HeroParallax() {
           href="#" 
           className="text-xl inline-block mt-8 px-6 py-3 font-bold border border-cardinal-red-dark bg-cardinal-red-dark text-white hover:bg-white hover:text-cardinal-red-dark"
         >
-          Explore Our Impact
+          Explore our impact
         </motion.a>
       </motion.div>
     </div>
